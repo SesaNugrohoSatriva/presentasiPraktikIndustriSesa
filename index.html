@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentasi PI - Sesa Nugroho Satriva</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="slideshow-container">
+
+        <div class="slide fade active">
+            <div class="content-center">
+                <img src="Logo Teknik Industri UNY.png" alt="Logo UNY" class="logo">
+                <p class="subtitle-gold">PRESENTASI PRAKTIK INDUSTRI</p>
+                <h1 class="title-elegant">Analisis Kebutuhan Sistem Outcome-Based Education (OBE) Berbasis ERP Odoo</h1>
+                <h3 class="subtitle-elegant">Berdasarkan Pendekatan Voice of Customer</h3>
+                <div class="divider-gold"></div>
+                <div class="author-box">
+                    <p>Disusun Oleh:</p>
+                    <p class="author-name">Sesa Nugroho Satriva (23051430031)</p>
+                    <p>Teknik Industri | Universitas Negeri Yogyakarta</p>
+                    <p style="margin-top: 5px; color: #888;">Lokasi: PT Doodex Jaya Makmur</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="content-left">
+                <p class="chapter-tag">BAB 2. PROFIL INDUSTRI</p>
+                <h2>A. Deskripsi Perusahaan</h2>
+                <div class="divider-gold-left"></div>
+                <div class="grid-2">
+                    <div>
+                        <p><strong>PT Doodex Jaya Makmur</strong> adalah perusahaan teknologi yang berfokus pada
+                            pengembangan sistem dan transformasi digital (berlokasi di Sleman, DIY).</p>
+                        <p>Perusahaan ini menghadirkan solusi perangkat lunak berbasis <em>web</em> dan ERP yang
+                            terintegrasi untuk mendukung efisiensi operasional bisnis dari level usaha kecil hingga
+                            perusahaan besar.</p>
+                    </div>
+                    <div class="card-elegant">
+                        <h3 class="card-title gold-text">Fokus & Layanan Utama</h3>
+                        <ul class="gold-bullets">
+                            <li>Automasi proses bisnis untuk efisiensi operasional.</li>
+                            <li>Konsultasi dan analisis kebutuhan teknologi <em>end-to-end</em>.</li>
+                            <li>Kustomisasi sistem ERP (Odoo) yang <em>scalable</em>.</li>
+                            <li>Integrasi data lintas aplikasi dan departemen.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="content-left">
+                <p class="chapter-tag">BAB 2. PROFIL INDUSTRI</p>
+                <h2>B. Struktur Organisasi Perusahaan</h2>
+                <div class="divider-gold-left"></div>
+                <div class="grid-2">
+                    <div>
+                        <h3 class="gold-text"
+                            style="border-bottom: 1px solid #444; padding-bottom: 5px; margin-bottom: 15px;">Manajerial
+                        </h3>
+                        <div class="card-elegant-outline compact-card">
+                            <h4 class="gold-text">Director & Board of Director</h4>
+                            <p>Menetapkan visi, strategi perusahaan, & pengawasan tata kelola operasional.</p>
+                        </div>
+                        <div class="card-elegant-outline compact-card">
+                            <h4 class="gold-text">Executive Comm. & PA</h4>
+                            <p>Mengelola administrasi SDM, rekrutmen, dan penjadwalan direksi.</p>
+                        </div>
+                        <div class="card-elegant-outline compact-card">
+                            <h4 class="gold-text">Senior FAT & Project Manager</h4>
+                            <p>Mengelola keuangan (Finance, Admin, Tax) dan timeline proyek.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="gold-text"
+                            style="border-bottom: 1px solid #444; padding-bottom: 5px; margin-bottom: 15px;">Divisi
+                            Teknis</h3>
+                        <div class="card-elegant compact-card">
+                            <h4 class="gold-text">Divisi Odoo Development</h4>
+                            <ul class="gold-bullets">
+                                <li><strong>Project Manager:</strong> Merancang arsitektur.</li>
+                                <li><strong>Senior/Reguler Dev:</strong> Integrasi & logika Python/XML.</li>
+                                <li><strong>Junior/Intern Dev:</strong> (Praktikan) Mendukung coding & bug fixing.</li>
+                            </ul>
+                        </div>
+                        <div class="card-elegant-outline compact-card">
+                            <h4 class="gold-text">Divisi Pendukung</h4>
+                            <p><strong>QA:</strong> Testing sistem. <strong>SEO Specialist:</strong> Digital marketing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="content-left">
+                <p class="chapter-tag">BAB 2. PROFIL INDUSTRI</p>
+                <h2>C. Workflow Pengembangan Secara Umum</h2>
+                <div class="divider-gold-left"></div>
+                <div class="grid-2">
+                    <div class="timeline-elegant">
+                        <div class="time-item">
+                            <div class="time-num">1</div>
+                            <div class="time-desc"><strong>Setup Environment:</strong> Menyiapkan Linux (WSL Ubuntu)
+                                pada Windows untuk stabilitas.</div>
+                        </div>
+                        <div class="time-item">
+                            <div class="time-num">2</div>
+                            <div class="time-desc"><strong>Virtual Environment:</strong> Mengisolasi <em>dependency</em>
+                                Python agar tidak bentrok antar proyek.</div>
+                        </div>
+                        <div class="time-item">
+                            <div class="time-num">3</div>
+                            <div class="time-desc"><strong>Instalasi Core:</strong> Menginstal Odoo, PostgreSQL, dan
+                                konfigurasi server dasar.</div>
+                        </div>
+                        <div class="time-item">
+                            <div class="time-num">4</div>
+                            <div class="time-desc"><strong>Git & GitHub:</strong> Inisialisasi repo lokal untuk
+                                kolaborasi dan <em>version control</em>.</div>
+                        </div>
+                    </div>
+                    <div class="timeline-elegant">
+                        <div class="time-item">
+                            <div class="time-num">5</div>
+                            <div class="time-desc"><strong>Coding Backend & Frontend:</strong> Membuat folder <em>custom
+                                    addons</em>, menyusun model ORM (Python), serta mendefinisikan UI/View (XML).</div>
+                        </div>
+                        <div class="time-item">
+                            <div class="time-num">6</div>
+                            <div class="time-desc"><strong>Data & Testing:</strong> Injeksi <em>sample data</em> (CSV),
+                                lalu pengujian UI <em>flow</em> di browser.</div>
+                        </div>
+                        <div class="time-item">
+                            <div class="time-num">7</div>
+                            <div class="time-desc"><strong>Debugging:</strong> Membaca log Odoo atau menggunakan DBeaver
+                                jika terjadi <em>error</em>.</div>
+                        </div>
+                        <div class="time-item">
+                            <div class="time-num">8</div>
+                            <div class="time-desc"><strong>Deployment:</strong> Commit/Push ke GitHub, <em>Code
+                                    Review</em>, lalu <em>Merge</em> ke Staging.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="content-left">
+                <p class="chapter-tag">BAB 2. PROFIL INDUSTRI</p>
+                <h2>D. Teknologi Custom Module Odoo</h2>
+                <div class="divider-gold-left"></div>
+                <div class="grid-3" style="margin-top: 40px;">
+                    <div class="card-elegant-outline text-center">
+                        <h3 class="gold-text" style="font-size:2rem; margin-bottom:15px;">Python</h3>
+                        <p>Bahasa utama menulis <strong>Model Data (ORM)</strong>, logika bisnis, <em>controller</em>,
+                            dan <em>automation</em> pada backend.</p>
+                    </div>
+                    <div class="card-elegant-outline text-center">
+                        <h3 class="gold-text" style="font-size:2rem; margin-bottom:15px;">XML & JS</h3>
+                        <p>Membentuk <strong>Antarmuka (UI)</strong>, struktur menu, <em>security rules</em>, dan widget
+                            interaktif di sisi frontend.</p>
+                    </div>
+                    <div class="card-elegant-outline text-center">
+                        <h3 class="gold-text" style="font-size:2rem; margin-bottom:15px;">PostgreSQL</h3>
+                        <p>Sistem basis data terpusat (<strong>Database</strong>) yang tangguh untuk menyimpan transaksi
+                            relasional Odoo.</p>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 30px; font-style: italic; color: #aaa;">*Didukung oleh WSL
+                    Ubuntu, Git/GitHub, Visual Studio Code, dan DBeaver.</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="content-left">
+                <p class="chapter-tag">BAB 3. KEGIATAN KEAHLIAN</p>
+                <h2>A & B. Kegiatan Mahasiswa Praktik di Industri</h2>
+                <div class="divider-gold-left"></div>
+                <div class="grid-2">
+                    <div class="card-elegant-outline">
+                        <h3 class="gold-text">A. Kegiatan Umum</h3>
+                        <ul class="gold-bullets">
+                            <li><strong>Pengenalan Lingkungan:</strong> Memahami struktur & SOP perusahaan.</li>
+                            <li><strong>Bimbingan Profesional:</strong> Menerima arahan mentor teknis.</li>
+                            <li><strong>Kolaborasi Tim:</strong> Diskusi teknis dengan developer lain.</li>
+                            <li><strong>Manajemen Proyek:</strong> Menyesuaikan alur kerja Agile/Scrum.</li>
+                            <li><strong>Etika Profesi:</strong> Menjaga kerahasiaan data (NDA).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="card-elegant compact-card" style="margin-bottom: 15px;">
+                            <h3 class="gold-text">B. Eksekusi Teknis (Khusus)</h3>
+                            <ul class="gold-bullets">
+                                <li>Pembuatan <em>custom module</em> OBE.</li>
+                                <li>Troubleshooting dan perbaikan <em>bug</em>.</li>
+                                <li>Menerapkan prinsip <em>Clean Code</em>.</li>
+                            </ul>
+                        </div>
+                        <div class="card-elegant compact-card">
+                            <h3 class="gold-text">B. Analisis & Dokumentasi</h3>
+                            <ul class="gold-bullets">
+                                <li>Menganalisis kebutuhan sistem bisnis.</li>
+                                <li>Mempelajari <em>workflow</em> lintas modul.</li>
+                                <li>Menyusun dokumen arsitektur teknis.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="content-left">
+                <p class="chapter-tag">BAB 3. KEGIATAN KEAHLIAN</p>
+                <h2>C. Inovasi: Latar Belakang Masalah OBE</h2>
+                <div class="divider-gold-left"></div>
+                <p>Penerapan <em>Outcome-Based Education (OBE)</em> manual memicu <strong>Fragmentasi Data
+                        (Silo)</strong>:</p>
+                <div class="grid-3" style="margin-top: 40px;">
+                    <div class="card-elegant text-center">
+                        <div style="font-size: 3.5rem; margin-bottom: 15px;">📁</div>
+                        <h3 class="gold-text">Silo 1: Data Nilai</h3>
+                        <p>Terisolasi di file Excel masing-masing dosen pengampu.</p>
+                    </div>
+                    <div class="card-elegant text-center">
+                        <div style="font-size: 3.5rem; margin-bottom: 15px;">📄</div>
+                        <h3 class="gold-text">Silo 2: Dokumen OBE</h3>
+                        <p>Dokumen standar CPL & CPMK bersifat statis dan tidak terhubung ke nilai.</p>
+                    </div>
+                    <div class="card-elegant text-center">
+                        <div style="font-size: 3.5rem; margin-bottom: 15px;">⏱️</div>
+                        <h3 class="gold-text">Silo 3: Output Nilai</h3>
+                        <p>Kalkulasi dari <strong>Komponen Penilaian</strong> ke <strong>CPMK</strong> hingga
+                            <strong>CPL</strong> dihitung manual dan rawan <em>error</em>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="content-left">
+                <p class="chapter-tag">BAB 3. KEGIATAN KEAHLIAN</p>
+                <h2>C. Identifikasi Voice of Customer (VoC)</h2>
+                <div class="divider-gold-left"></div>
+                <p>Menggali <em>pain points</em> pengguna menggunakan pendekatan VoC:</p>
+                <table class="elegant-table" style="margin-top: 30px;">
+                    <tr>
+                        <th style="font-size: 1.2rem;">Stakeholder</th>
+                        <th style="font-size: 1.2rem;">Voice of Customer (Keluhan)</th>
+                    </tr>
+                    <tr>
+                        <td class="gold-text" style="font-size: 1.1rem;"><strong>👨‍🏫 Dosen</strong></td>
+                        <td style="font-size: 1.1rem;">"Beban administratif tinggi untuk rekap. Waktu habis untuk
+                            menghitung persentase capaian manual."</td>
+                    </tr>
+                    <tr>
+                        <td class="gold-text" style="font-size: 1.1rem;"><strong>👨‍💻 Admin/Prodi</strong></td>
+                        <td style="font-size: 1.1rem;">"Data tidak seragam antar dosen. Sangat sulit menyusun laporan
+                            evaluasi untuk akreditasi."</td>
+                    </tr>
+                    <tr>
+                        <td class="gold-text" style="font-size: 1.1rem;"><strong>🎓 Mahasiswa</strong></td>
+                        <td style="font-size: 1.1rem;">"Saya dapat B, tapi saya tidak tahu indikator CPMK mana yang
+                            sebenarnya masih kurang."</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="content-left">
+                <p class="chapter-tag">BAB 3. KEGIATAN KEAHLIAN</p>
+                <h2>C. Analisis Kebutuhan Sistem</h2>
+                <div class="divider-gold-left"></div>
+                <p>Menerjemahkan VoC menjadi syarat teknis sistem (Blueprint):</p>
+                <div class="card-elegant" style="margin-top: 20px;">
+                    <ol class="gold-numbers" style="font-size: 1.1rem; line-height: 2;">
+                        <li><strong>Integrasi Terpusat:</strong> Menyatukan entitas CPL, CPMK, Mata Kuliah, dan
+                            Mahasiswa dalam satu basis data.</li>
+                        <li><strong>Automasi Output Nilai:</strong> Menyediakan mesin kalkulasi <em>bottom-up</em>.
+                            Nilai dari <strong>Komponen Penilaian</strong> (Kuis/Ujian) akan otomatis terakumulasi
+                            menjadi capaian <strong>CPMK</strong>, lalu bermuara ke persentase <strong>CPL</strong>.
+                        </li>
+                        <li><strong>Standarisasi Laporan:</strong> Menghasilkan <em>dashboard</em> dan laporan yang siap
+                            ekspor untuk akreditasi.</li>
+                        <li><strong>UI/UX Sederhana:</strong> Antarmuka <em>input</em> dosen yang tidak memerlukan
+                            keahlian IT kompleks.</li>
+                        <li><strong>Portal Transparansi:</strong> Hak akses khusus agar mahasiswa bisa melihat grafik
+                            radar capaiannya sendiri.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="content-center" style="max-width: 1000px;">
+                <p class="chapter-tag">BAB 3. KEGIATAN KEAHLIAN</p>
+                <h2>C. Struktur Hierarki OBE Sistem</h2>
+                <div class="divider-gold"></div>
+
+                <div class="hierarchy-chart" style="margin-top: 40px;">
+
+                    <div class="h-row" style="gap: 150px;">
+                        <div class="h-node cpl-node" style="width: 250px;">
+                            <h3>CPL</h3>
+                            <p>Capaian Pembelajaran Lulusan</p>
+                        </div>
+                        <div class="h-node mk-node" style="width: 250px;">
+                            <h3>Mata Kuliah</h3>
+                            <p>Kurikulum Prodi</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: center; width: 100%;">
+                        <div style="width: 400px; display: flex; justify-content: space-between;">
+                            <div class="h-line-vertical" style="height: 20px;"></div>
+                            <div class="h-line-vertical" style="height: 20px;"></div>
+                        </div>
+                    </div>
+                    <div
+                        style="width: 404px; border-top: 2px solid var(--gold); height: 20px; margin: 0 auto; border-radius: 4px 4px 0 0;">
+                    </div>
+                    <div class="h-line-vertical" style="height: 20px; margin-top: -20px;"></div>
+
+                    <div class="h-node cpmk-node" style="width: 300px; z-index: 3;">
+                        <h3>CPMK</h3>
+                        <p>Capaian Pembelajaran Mata Kuliah</p>
+                    </div>
+
+                    <div class="h-line-vertical" style="height: 30px;"></div>
+                    <div class="h-line-horizontal" style="width: 480px;"></div>
+
+                    <div class="h-row-components" style="width: 480px;">
+                        <div class="h-branch">
+                            <div class="h-line-v-small"></div>
+                            <div class="h-node comp-node">Kuis</div>
+                        </div>
+                        <div class="h-branch">
+                            <div class="h-line-v-small"></div>
+                            <div class="h-node comp-node">Tugas</div>
+                        </div>
+                        <div class="h-branch">
+                            <div class="h-line-v-small"></div>
+                            <div class="h-node comp-node">Praktikum</div>
+                        </div>
+                        <div class="h-branch">
+                            <div class="h-line-v-small"></div>
+                            <div class="h-node comp-node">Ujian</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <div class="content-center" style="max-width: 1100px;">
+                <p class="chapter-tag">BAB 3. KEGIATAN KEAHLIAN</p>
+                <h2>C. Arsitektur Data Kurikulum (ERD)</h2>
+                <div class="divider-gold"></div>
+
+                <div class="erd-wrapper" style="margin-top: 50px;">
+                    <div class="erd-row-layout">
+                        <div class="erd-table">
+                            <div class="erd-header">CPL</div>
+                            <div class="erd-body">
+                                <div class="erd-item"><span class="pk">PK</span> id_cpl</div>
+                                <div class="erd-item"><span>kode_cpl</span></div>
+                                <div class="erd-item"><span>deskripsi</span></div>
+                            </div>
+                        </div>
+
+                        <div class="erd-connector-h" style="width: 60px;"><span>1</span>
+                            <div class="line-h"></div><span>N</span>
+                        </div>
+
+                        <div class="erd-table"
+                            style="border: 2px solid #4facfe; box-shadow: 0 0 15px rgba(79,172,254,0.3);">
+                            <div class="erd-header" style="background: rgba(79,172,254,0.15);">CPMK</div>
+                            <div class="erd-body">
+                                <div class="erd-item"><span class="pk">PK</span> id_cpmk</div>
+                                <div class="erd-item"><span class="fk">FK</span> id_cpl</div>
+                                <div class="erd-item"><span class="fk">FK</span> id_mk</div>
+                                <div class="erd-item"><span>kode_cpmk</span></div>
+                                <div class="erd-item"><span>deskripsi</span></div>
+                            </div>
+                        </div>
+
+                        <div class="erd-connector-h" style="width: 60px;"><span>N</span>
+                            <div class="line-h"></div><span>1</span>
+                        </div>
+
+                        <div class="erd-table">
+                            <div class="erd-header"
+                                style="background: rgba(40,167,69,0.15); color: #28a745; border-bottom: 1px solid rgba(40,167,69,0.4);">
+                                Mata Kuliah</div>
+                            <div class="erd-body">
+                                <div class="erd-item"><span class="pk">PK</span> id_mk</div>
+                                <div class="erd-item"><span>kode_mk</span></div>
+                                <div class="erd-item"><span>nama_mk</span></div>
+                                <div class="erd-item"><span>sks</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="erd-row-layout" style="height: 40px;">
+                        <div class="erd-connector-v" style="width: 100%;">
+                            <span>1</span>
+                            <div class="line-v"></div><span>N</span>
+                        </div>
+                    </div>
+
+                    <div class="erd-row-layout">
+                        <div class="erd-table"
+                            style="border-color: #ff6b6b; box-shadow: 0 0 15px rgba(255,107,107,0.2);">
+                            <div class="erd-header"
+                                style="background: rgba(255,107,107,0.15); color: #ff6b6b; border-bottom: 1px solid rgba(255,107,107,0.4);">
+                                Komponen Penilaian</div>
+                            <div class="erd-body">
+                                <div class="erd-item"><span class="pk">PK</span> id_komponen</div>
+                                <div class="erd-item"><span class="fk">FK</span> id_cpmk</div>
+                                <div class="erd-item"><span>nama_komponen</span></div>
+                                <div class="erd-item"><span>bobot</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="slide fade">
+            <div class="content-center">
+                <img src="Logo Teknik Industri UNY.png" alt="Logo UNY" class="logo" style="width: 100px;">
+                <h1 class="title-elegant" style="font-size: 3rem; margin-top: 20px;">Kesimpulan</h1>
+                <div class="divider-gold"></div>
+                <p style="font-size: 1.3rem; line-height: 1.8; color: #ddd; max-width: 800px; margin: 0 auto;">
+                    "Pengembangan modul kustom Outcome-Based Education (OBE) dilakukan dengan menggunakan pendekatan
+                    Voice of Customer, yaitu dengan memahami kebutuhan dan permasalahan pengguna dalam pengelolaan OBE"
+                </p>
+                <div
+                    style="margin-top: 50px; border: 1px solid var(--gold); padding: 20px; border-radius: 8px; display: inline-block;">
+                    <h3 class="gold-text" style="margin-bottom: 5px;">Terima Kasih</h3>
+                    <p style="color: #fff;">Sesi Tanya Jawab</p>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) { showSlides(slideIndex += n); }
+        function currentSlide(n) { showSlides(slideIndex = n); }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].classList.remove("active");
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active-dot", "");
+            }
+            slides[slideIndex - 1].style.display = "flex";
+            setTimeout(() => slides[slideIndex - 1].classList.add("active"), 50);
+            dots[slideIndex - 1].className += " active-dot";
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "ArrowRight") plusSlides(1);
+            if (e.key === "ArrowLeft") plusSlides(-1);
+        });
+    </script>
+</body>
+
+</html>
