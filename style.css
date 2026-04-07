@@ -76,6 +76,7 @@ li {
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
     width: 150px;
+    max-width: 100%;
     margin: 20px auto;
 }
 
@@ -101,19 +102,21 @@ li {
     padding: 40px 8%;
     align-items: center;
     justify-content: center;
-    /* KEMBALI KE CENTER AGAR PROPORSIONAL */
     flex-direction: column;
     opacity: 0;
     transition: opacity 0.8s ease;
+    overflow-y: auto;
 }
 
 .slide.active {
     opacity: 1;
+    display: flex;
 }
 
 .content-center {
     text-align: center;
     max-width: 900px;
+    width: 100%;
 }
 
 .content-left {
@@ -123,6 +126,7 @@ li {
 
 .logo {
     max-width: 130px;
+    width: 100%;
     margin-bottom: 15px;
     filter: drop-shadow(0px 0px 8px rgba(212, 175, 55, 0.3));
 }
@@ -144,14 +148,16 @@ li {
 
 .grid-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    width: 100%;
 }
 
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    width: 100%;
 }
 
 .card-elegant {
@@ -160,6 +166,7 @@ li {
     border-radius: 8px;
     border-top: 3px solid var(--gold);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
 .card-elegant-outline {
@@ -168,6 +175,7 @@ li {
     border-radius: 8px;
     border: 1px solid rgba(212, 175, 55, 0.3);
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
 .compact-card {
@@ -246,6 +254,9 @@ ol.gold-numbers li::marker {
     background: var(--bg-card);
     border-radius: 8px;
     overflow: hidden;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .elegant-table th,
@@ -276,20 +287,22 @@ ol.gold-numbers li::marker {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     padding: 20px;
     color: var(--gold);
     font-weight: bold;
     font-size: 24px;
     transition: 0.3s;
     border-radius: 4px;
+    z-index: 10;
 }
 
 .next {
-    right: 20px;
+    right: 10px;
 }
 
 .prev {
-    left: 20px;
+    left: 10px;
 }
 
 .prev:hover,
@@ -303,6 +316,7 @@ ol.gold-numbers li::marker {
     bottom: 20px;
     width: 100%;
     text-align: center;
+    z-index: 10;
 }
 
 .dot {
@@ -323,13 +337,13 @@ ol.gold-numbers li::marker {
     box-shadow: 0 0 8px var(--gold);
 }
 
-/* ERD */
 .erd-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
     font-family: 'Lato', sans-serif;
+    width: 100%;
 }
 
 .erd-row-layout {
@@ -344,6 +358,7 @@ ol.gold-numbers li::marker {
     border: 1px solid rgba(212, 175, 55, 0.4);
     border-radius: 8px;
     width: 220px;
+    max-width: 100%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     overflow: hidden;
     text-align: left;
@@ -373,7 +388,6 @@ ol.gold-numbers li::marker {
     padding: 5px 0;
     border-bottom: 1px dashed #333;
     font-family: monospace;
-    /* Memberikan kesan kode/database */
 }
 
 .erd-item:last-child {
@@ -382,7 +396,6 @@ ol.gold-numbers li::marker {
 
 .pk {
     color: #ff6b6b;
-    /* Merah untuk Primary Key */
     font-weight: bold;
     font-size: 0.75rem;
     margin-right: 10px;
@@ -393,7 +406,6 @@ ol.gold-numbers li::marker {
 
 .fk {
     color: #4facfe;
-    /* Biru untuk Foreign Key */
     font-weight: bold;
     font-size: 0.75rem;
     margin-right: 10px;
@@ -402,7 +414,6 @@ ol.gold-numbers li::marker {
     border-radius: 3px;
 }
 
-/* Garis Konektor (Relasi) */
 .erd-connector-h {
     display: flex;
     align-items: center;
@@ -429,7 +440,7 @@ ol.gold-numbers li::marker {
     font-weight: bold;
     font-size: 0.9rem;
     width: 220px;
-    /* Sejajar dengan tabel tengah */
+    max-width: 100%;
 }
 
 .line-v {
@@ -437,6 +448,7 @@ ol.gold-numbers li::marker {
     flex-grow: 1;
     background: var(--gold);
     margin: 5px 0;
+    min-height: 20px;
 }
 
 .hierarchy-chart {
@@ -445,6 +457,7 @@ ol.gold-numbers li::marker {
     align-items: center;
     margin-top: 10px;
     font-family: 'Lato', sans-serif;
+    width: 100%;
 }
 
 .h-node {
@@ -456,12 +469,13 @@ ol.gold-numbers li::marker {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
     position: relative;
     z-index: 2;
+    width: 100%;
 }
 
 .cpl-node {
     border-color: #D4AF37;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-    width: 380px;
+    max-width: 380px;
 }
 
 .cpl-node h3 {
@@ -473,7 +487,8 @@ ol.gold-numbers li::marker {
 .cpmk-node {
     border-color: #4facfe;
     box-shadow: 0 0 20px rgba(79, 172, 254, 0.2);
-    width: 320px;
+    max-width: 320px;
+    background: var(--bg-card);
 }
 
 .cpmk-node h3 {
@@ -488,10 +503,9 @@ ol.gold-numbers li::marker {
     color: #ff6b6b;
     font-weight: bold;
     font-size: 1rem;
-    width: 110px;
+    max-width: 110px;
 }
 
-/* Garis Koneksi */
 .h-line-vertical {
     width: 2px;
     height: 35px;
@@ -501,8 +515,8 @@ ol.gold-numbers li::marker {
 }
 
 .h-line-horizontal {
-    width: 480px;
-    /* Merentang menutupi komponen */
+    width: 100%;
+    max-width: 480px;
     height: 2px;
     background: var(--gold);
     position: relative;
@@ -512,8 +526,8 @@ ol.gold-numbers li::marker {
 .h-row-components {
     display: flex;
     justify-content: space-between;
-    width: 480px;
-    /* Sama dengan garis horizontal */
+    width: 100%;
+    max-width: 480px;
 }
 
 .h-branch {
@@ -536,14 +550,82 @@ ol.gold-numbers li::marker {
 }
 
 .mk-node {
-    border-color: #28a745; 
-    box-shadow: 0 0 20px rgba(40,167,69,0.2); 
+    border-color: #28a745;
+    box-shadow: 0 0 20px rgba(40, 167, 69, 0.2);
+    max-width: 320px;
 }
-.mk-node h3 { color: #28a745; font-size: 1.5rem; margin-bottom: 5px; }
 
-/* Menyesuaikan kembali CPMK */
-.cpmk-node { 
-    border-color: #4facfe; 
-    box-shadow: 0 0 20px rgba(79,172,254,0.2); 
-    background: var(--bg-card);
+.mk-node h3 {
+    color: #28a745;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .title-elegant {
+        font-size: 1.8rem;
+    }
+
+    .subtitle-elegant {
+        font-size: 1.1rem;
+    }
+
+    .slide {
+        padding: 60px 5%;
+        justify-content: flex-start;
+    }
+
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .erd-row-layout {
+        flex-direction: column;
+    }
+
+    .erd-connector-h {
+        flex-direction: column;
+        width: 2px;
+        height: 40px;
+        margin: 10px 0;
+    }
+
+    .line-h {
+        width: 2px;
+        height: 100%;
+        margin: 5px 0;
+    }
+
+    .erd-connector-v {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .h-line-horizontal {
+        display: none;
+    }
+
+    .h-row-components {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .h-line-v-small {
+        display: none;
+    }
+
+    .prev,
+    .next {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .comp-node {
+        max-width: 100%;
+        width: 200px;
+    }
 }
